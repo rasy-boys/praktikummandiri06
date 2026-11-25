@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum Mandiri 06 - Pengolah Nilai Mahasiswa</title>
+</head>
+<body>
+  <h1>Pengolah Nilai Mahasiswa</h1>
+  <p>Buka Console (F12 &rarr; tab Console) untuk melihat hasilnya.</p>
+
+  <script>
+    // Data mahasiswa
+    let nama = "Muhamad Rasya Fattah Ar Rizqy";
+
+    // Tiga variabel nilai
+    let nilaiTugas = 80;
+    let nilaiUTS = 70;
+    let nilaiUAS = 90;
+
+    // Rumus: tugas 30% + UTS 30% + UAS 40%
+    let nilaiAkhir = (nilaiTugas * 0.3) + (nilaiUTS * 0.3) + (nilaiUAS * 0.4);
+
+    // Percabangan: LULUS jika nilai akhir >= 60
+    let status;
+    if (nilaiAkhir >= 60) {
+      status = "LULUS";
+    } else {
+      status = "TIDAK LULUS";
+    }
+
+    // Output melalui console.log()
+    console.log("Nama Mahasiswa : " + nama);
+    console.log("Nilai Akhir    : " + nilaiAkhir);
+    console.log("Status         : " + status);
+  </script>
+</body>
+</html>
